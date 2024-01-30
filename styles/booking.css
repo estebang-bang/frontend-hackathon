@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F0F1F2;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#boxmiddle{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tripContainer {
+    display: flex;
+    justify-content: space-between;
+}
