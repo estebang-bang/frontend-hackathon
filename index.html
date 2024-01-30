@@ -20,15 +20,17 @@
 
 <div id="boxes">
     <div class="tripsbox">
-        <input type="text" placeholder="Departure">
-        <input type="text" placeholder="Arrival">
+        <input type="text" placeholder="Departure" id="rechercheDepart">
+        <input type="text" placeholder="Arrival" id="rechercheArrivee">
         <input id="pickDate" type="date" name="date">
         <button id="btnSearch" type="button">Search</button>
     </div>
-    <div class="tripsbox">
-        <img src="images/train.png" alt="iconetrain">
+    <div class="tripsbox" id="resultats">
+        <div id="results"><img src="images/train.png" alt="iconetrain" id="imgTrain"></div>
         <p id="textResult">It's time to book your future trip.</p>
     </div>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
+
