@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: red;
+}
+
+h1, h2 {
+    color:white;
+}
+
+#box
