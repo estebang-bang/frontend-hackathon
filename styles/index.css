@@ -56,3 +56,7 @@ header {
 .right-elements span {
     margin-left: 15px;
 }
+
+#results{
+    overflow: auto;
+}
