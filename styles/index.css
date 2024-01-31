@@ -56,3 +56,11 @@ header {
 .right-elements span {
     margin-left: 15px;
 }
+
+#results{
+    overflow: auto;
+}
+.tripContainer{
+    display: flex;
+    justify-content:space-between ;
+}

@@ -20,7 +20,7 @@ chercher.addEventListener("click", function () {
           document.querySelector("#results").innerHTML += `
             <div class="tripContainer">
                 <p>${data.trips[i].departure} > ${data.trips[i].arrival}</p>
-                <p>HORAIRE</p>
+                <p>${new Date(data.trips[i].date).getHours()}:${new Date(data.trips[i].date).getMinutes()}</p>
                 <p>${data.trips[i].price}€</p>
                 <button class='btnaddToCart' id=${data.trips[i]._id}>Book</button>
             </div>`;
@@ -40,14 +40,17 @@ function addToCart() {
   for (let i = 0; i < btnAdd.length; i++) {
     btnAdd[i].addEventListener("click", function () {
       // this.disable = true
-      console.log(this)
-      const tripId = this.id
-     
+      const tripBooked = {
+        departure: this.departure,
+        arrival: this.arrival,
+        date: this.date,
+        id: this.id,
+      }
       //Ajoute l'élément sélectionné dans la collection cart
       fetch("http://localhost:3000/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tripId }),
+        body: JSON.stringify(tripBooked),
       });
     });
   }
