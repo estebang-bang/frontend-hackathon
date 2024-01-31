@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>BOOKINGS</title>
-    <link rel="stylesheet" href="styles/cart.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/cart.css"/>
+  </head>
+  <body>
     <header>
-        <a href="index.html"><span class="title">TICKETHACK</span></a>
-        <div class="right-elements">
-    
-            <a href="cart.html"><span>Cart</span></a>
-            <a href="bookings.html"><span>Bookings</span></a>
-        </div>
+      <a href="index.html"><span class="title">TICKETHACK</span></a>
+      <div class="right-elements">
+        <a href="cart.html"><span>Cart</span></a>
+        <a href="bookings.html"><span>Bookings</span></a>
+      </div>
     </header>
     <div id="boxmiddle">
-        <h3>My Cart</h3>
-        <div class="tripContainer">
-            <p id="tripName">TripsName</p>
-            <p id="departureTime">Time</p>
-            <p id="tripRate">Rate</p>
-            <button class="btnDelete">X</button>
-        </div>
-        <div>
-            <p>MONTANT TOTAL</p>
-            <button id="btnAddPurchase">Purchase</button>
-        </div>
+      <h3>My Cart</h3>
+      <div id="tripContainer"></div>
+      <div>
+        <p>MONTANT TOTAL</p>
+        <button id="btnAddPurchase">Purchase</button>
+      </div>
     </div>
-</body>
+    <script src="cart.js"></script>
+  </body>
+</html>
