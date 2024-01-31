@@ -44,7 +44,7 @@ function addToCart() {
       const tripId = this.id
      
       //Ajoute l'élément sélectionné dans la collection cart
-      fetch("http://localhost:3000/trips", {
+      fetch("http://localhost:3000/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ tripId }),
