@@ -23,9 +23,9 @@ function updateDeletetrips() {
         body: JSON.stringify({ _id: this._id }),
       })
         .then((response) => response.json())
-        .then((data) => {
-          this.parentNode.remove();
-        });
+        .then(
+          this.parentNode.remove()
+        );
     });
   }
 }

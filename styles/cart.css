@@ -36,3 +36,31 @@ header {
 .right-elements span {
     margin-left: 15px;
 }
+
+#boxmiddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    
+    justify-content: center;
+}
+
+.tripContainer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+h3{
+    text-align: center;
+}
+
+ #total {
+    display: flex;
+    justify-content: space-between;
+ }
+
+  #tripContainer {
+    overflow: auto;
+  }
