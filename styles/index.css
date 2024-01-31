@@ -60,3 +60,7 @@ header {
 #results{
     overflow: auto;
 }
+.tripContainer{
+    display: flex;
+    justify-content:space-between ;
+}
